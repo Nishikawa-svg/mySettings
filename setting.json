@@ -1,0 +1,43 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "C_Cpp.updateChannel": "Insiders",
+
+  "vim.leader": "<Space>",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(0, 240, 170, 0.5)",
+  "vim.highlightedyank.duration": 400,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<Leader>", "w"],
+      "commands": [
+        {
+          "command": "workbench.action.files.save"
+        }
+      ]
+    },
+    {
+      "before": ["J"],
+      "after": ["3", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["3", "k"]
+    }
+  ],
+  "vim.hlsearch": true,
+  "vim.whichwrap": "h,l,<,>,[,],b,s",
+  "vim.useSystemClipboard": true,
+  "window.zoomLevel": -1
+}
