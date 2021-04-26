@@ -2,7 +2,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
-  "C_Cpp.updateChannel": "Insiders",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
 
   "vim.leader": "<Space>",
   "vim.highlightedyank.enable": true,
@@ -28,6 +29,14 @@
       ]
     },
     {
+      "before": ["<Leader>", "y"],
+      "after": ["g", "g", "V", "G", "y"]
+    },
+    {
+      "before": ["<Leader>", "d"],
+      "after": ["g", "g", "V", "G", "d"]
+    },
+    {
       "before": ["J"],
       "after": ["3", "j"]
     },
@@ -39,5 +48,13 @@
   "vim.hlsearch": true,
   "vim.whichwrap": "h,l,<,>,[,],b,s",
   "vim.useSystemClipboard": true,
-  "window.zoomLevel": -1
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  }
 }
