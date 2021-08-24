@@ -1,10 +1,24 @@
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "on",
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
 
+{
+  //  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": null,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[cpp, c]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true,
+  },
+  "editor.wordWrap": "off",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "C_Cpp.updateChannel": "Insiders",
+  "editor.minimap.enabled": false,
+
+  //vim plugin
   "vim.leader": "<Space>",
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(0, 240, 170, 0.5)",
@@ -13,9 +27,41 @@
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    },
+    {
+      "before": ["<left>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<right>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<up>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<down>"],
+      "after": ["<nop>"]
     }
   ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": ["<left>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<right>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<up>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["<down>"],
+      "after": ["<nop>"]
+    },
     {
       "before": ["<Esc>"],
       "commands": [":nohl"]
@@ -48,7 +94,6 @@
   "vim.hlsearch": true,
   "vim.whichwrap": "h,l,<,>,[,],b,s",
   "vim.useSystemClipboard": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
@@ -56,5 +101,11 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-  }
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
 }
