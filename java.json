@@ -29,6 +29,7 @@
 		"prefix": "java_templete",
 		"body": [
 			"import java.util.*;",
+			"import java.util.stream.*;",
 			"import java.io.*;",
 			"",
 			"public class Main {",
@@ -141,6 +142,7 @@
 		"prefix": "aoj",
 		"body": [
 			"import java.util.*;",
+			"import java.util.stream*;",
 			"import java.io.*;",
 			"",
 			"public class Main implements Runnable{",
