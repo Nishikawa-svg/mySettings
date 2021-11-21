@@ -47,6 +47,7 @@ inoremap "" ""
 inoremap '' ''
 inoremap () ()
 inoremap {} {}
+inoremap [] []
 inoremap <> <><left>
 
 inoremap jj <esc>
